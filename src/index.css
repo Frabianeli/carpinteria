@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Zalando Sans', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  /* Escala de grosores */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+
+  /* --- Colores Principales (Brand) --- */
+  --color-primary: #1e3a2b;         /* Verde bosque / pino profundo */
+  --color-primary-hover: #14281d;   /* Verde bosque oscuro para hovers */
+  --color-secondary: #d97706;       /* Naranja cálido / ámbar madera */
+  --color-secondary-hover: #b45309; /* Ámbar oscuro para hovers */
+  --color-accent: #8b5e3c;          /* Tono madera roble / artesanal */
+
+  /* --- Fondos Neutros Cálidos --- */
+  --color-bg-main: #fcfbf7;         /* Blanco hueso / papiro */
+  --color-bg-alt: #f3efe6;          /* Crema claro / madera clara */
+  --color-bg-dark: #16241c;         /* Fondo oscuro para footer o banners */
+
+  /* --- Superficies y Tarjetas --- */
+  --color-surface: #ffffff;         /* Blanco puro para tarjetas */
+  --color-border: #e2d9cc;          /* Borde suave tono madera / arena */
+
+  /* --- Textos --- */
+  --color-text-main: #1f2923;       /* Verde-gris casi negro para lectura */
+  --color-text-muted: #6b7280;      /* Gris neutro para subtítulos o fechas */
+  --color-text-light: #f3efe6;      /* Texto claro para fondos oscuros */
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg-main);
+    color: var(--color-text-main);
+    font-family: var(--font-sans);
+    font-weight: var(--font-regular);
+  }
+
+  p {
+    @apply mb-4;
+  }
+
+  p:last-child {
+    @apply mb-0;
+  }
+}
