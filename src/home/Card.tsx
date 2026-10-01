@@ -1,7 +1,7 @@
 
 interface CardProps {
   prod: {
-      id: string;
+    id: string;
     nombre: string;
     categoria: string;
     descripcion: string;
@@ -22,7 +22,7 @@ export const Card = ({ prod }: CardProps) => {
         <h3 className="font-bold text-lumbert-green text-lg">{prod.nombre}</h3>
         <p className="text-gray-600 text-xs line-clamp-2">{prod.descripcion}</p>
         <div className="pt-3 border-t border-lumbert-border flex justify-between items-center">
-            <span className="text-lg font-black text-lumbert-amber">{prod.precio}</span>
+            <span className="text-lg font-black text-lumbert-amber">S/ {prod.precio}</span>
             <button className="bg-lumbert-green hover:bg-lumbert-green-dark text-white text-xs px-3 py-1.5 rounded font-bold">
             Detalles
             </button>

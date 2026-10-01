@@ -1,4 +1,3 @@
-
 export const Contacto = () => {
   return (
     <section id="contacto" className="bg-[url('https://images.unsplash.com/photo-1476231682828-37e571bc172f?fm=jpg&q=60&w=3000&auto=format&fit=crop')] 
@@ -16,7 +15,6 @@ export const Contacto = () => {
                 </button>
             </form>
         </div>
-        
     </section>
   )
 }

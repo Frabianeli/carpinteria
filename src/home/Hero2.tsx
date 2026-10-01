@@ -1,7 +1,7 @@
 
-export const Hero = () => {
+export const Hero2 = () => {
 return (
-    <section id="inicio" className="relative bg-[#182820] text-white py-24 md:py-36 px-6 overflow-hidden">
+    <section className="relative bg-[#182820] text-white py-24 md:py-36 px-6 overflow-hidden">
       {/* Overlay decorativo de textura de madera/bosque */}
       <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1546484475-7f7bd55792da?w=1600')] bg-cover bg-center"></div>
 
@@ -21,10 +21,10 @@ return (
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <a href="#catalogo" className="bg-lumbert-amber hover:bg-lumbert-amber-dark text-white font-bold text-sm uppercase tracking-wider px-8 py-4 rounded text-center transition shadow-lg">
+            <a href="#catalogo" className="border-2 border-white hover:bg-white hover:text-black text-white font-bold text-sm uppercase tracking-wider px-8 py-4 rounded text-center transition shadow-lg">
               Ver Productos API
             </a>
-            <a href="#servicios" className="border-2 border-white hover:bg-white hover:text-lumbert-green font-bold text-sm uppercase tracking-wider px-8 py-4 rounded text-center transition">
+            <a href="#servicios" className="border-2 border-white hover:bg-white hover:text-black font-bold text-sm uppercase tracking-wider px-8 py-4 rounded text-center transition">
               Nuestros Servicios
             </a>
           </div>
